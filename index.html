@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELTDRY — Tu equipo de ventas con IA</title>
+<meta name="description" content="VELTDRY automatiza tus ventas y atención al cliente con inteligencia artificial. Responde, conversa y convierte 24/7.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link rel="preload" as="video" href="assets/video/veltdry-hero.mp4">
+<link rel="stylesheet" href="styles.css?v=20260723d">
+
+<link rel="icon" href="assets/img/veltdry-v-icon.png">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF00E0"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="mouse-gradient" data-mouse-gradient aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<div class="cursor" data-cursor-root aria-hidden="true">
+  <span class="cursor-dot"></span>
+  <span class="cursor-ring"></span>
+</div>
+
+<!-- NAVBAR -->
+<header class="nav" data-nav>
+  <div class="nav__inner container">
+    <a href="#main" class="logo" aria-label="VELTDRY — inicio">
+      <img src="assets/img/veltdry-logo.png" alt="VELTDRY" class="logo__img" width="170" height="31">
+    </a>
+
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#solucion">Producto</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#precios">Precios</a>
+      <a href="#demo-interactiva">Recursos</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow">Solicitar una demo</a>
+    </div>
+
+    <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="#solucion">Producto</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#soluciones">Soluciones</a>
+    <a href="#precios">Precios</a>
+    <a href="#demo-interactiva">Recursos</a>
+    <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow">Solicitar una demo</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="assets/video/veltdry-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__lines" aria-hidden="true">
+      <span class="led-line led-line--1"></span>
+      <span class="led-line led-line--2"></span>
+    </div>
+
+    <div class="container hero__grid">
+      <div class="hero__copy" data-reveal>
+        <p class="kicker">AI Sales Automation</p>
+        <h1 class="hero__title">Tu equipo de ventas con <span class="grad-text">IA</span>.</h1>
+        <p class="hero__sub">VELTDRY responde, conversa y ayuda a convertir clientes 24/7.</p>
+        <p class="hero__text">Automatiza tus conversaciones, atiende más clientes y convierte cada mensaje en una oportunidad de venta.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow btn--lg">Solicitar una demostración →</a>
+          <a href="#como-funciona" class="btn btn--ghost btn--lg">Ver cómo funciona</a>
+        </div>
+      </div>
+
+      <div class="hero__demo" data-reveal>
+        <div class="chat-card">
+          <div class="chat-card__head">
+            <span class="chat-dot" aria-hidden="true"></span>
+            <span class="chat-card__title">VELTDRY AI</span>
+            <span class="chat-card__status">en línea</span>
+          </div>
+          <div class="chat-card__body" data-hero-chat>
+            <div class="chat-bubble chat-bubble--user">Hola, ¿tienen disponibilidad para hoy?</div>
+            <div class="chat-bubble chat-bubble--ai">¡Hola! Sí, tengo espacio a las 4:30pm y 6:00pm. ¿Cuál prefieres?</div>
+            <div class="chat-bubble chat-bubble--user">6:00pm porfa</div>
+            <div class="chat-bubble chat-bubble--ai">Perfecto, quedas agendado para las 6:00pm ✅</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SOCIAL PROOF / MÉTRICAS -->
+  <section class="metrics" id="metricas">
+    <div class="container">
+      <div class="metrics__grid">
+        <div class="metric" data-reveal data-count-block>
+          <span class="metric__value"><span data-count-to="3000" data-prefix="+">0</span></span>
+          <span class="metric__label">Negocios atendidos</span>
+        </div>
+        <div class="metric" data-reveal data-count-block>
+          <span class="metric__value"><span data-count-to="2" data-prefix="+" data-suffix="M">0</span></span>
+          <span class="metric__label">Conversaciones gestionadas</span>
+        </div>
+        <div class="metric" data-reveal data-count-block>
+          <span class="metric__value"><span data-count-to="35" data-prefix="+" data-suffix="%">0</span></span>
+          <span class="metric__label">Aumento promedio en ventas</span>
+        </div>
+        <div class="metric" data-reveal data-count-block>
+          <span class="metric__value">24/7</span>
+          <span class="metric__label">Atención sin interrupciones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROBLEMA -->
+  <section class="problema" id="problema">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Cada mensaje sin responder es una <span class="grad-text">oportunidad perdida</span>.</h2>
+      <div class="problema__grid">
+        <div class="problema__card" data-reveal>
+          <span class="problema__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Clientes esperando respuestas</h3>
+          <p>Minutos sin contestar y el interesado ya está escribiéndole a la competencia.</p>
+        </div>
+        <div class="problema__card" data-reveal>
+          <span class="problema__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12l6-8 6 8-6 8-6-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Oportunidades perdidas</h3>
+          <p>Cada conversación sin seguimiento es una venta que nunca vas a saber que perdiste.</p>
+        </div>
+        <div class="problema__card" data-reveal>
+          <span class="problema__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3>Equipos saturados</h3>
+          <p>Tu equipo repite las mismas respuestas en vez de enfocarse en cerrar ventas.</p>
+        </div>
+      </div>
+      <p class="problema__lead" data-reveal>Mientras tanto, los mensajes se acumulan. <strong>VELTDRY responde por ti, al instante, siempre.</strong></p>
+    </div>
+  </section>
+
+  <!-- 4. SOLUCIÓN -->
+  <section class="solucion" id="solucion">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Deja que la IA atienda. <span class="grad-text">Tú enfócate en crecer.</span></h2>
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal>
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v10H8l-4 4V5Z" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>IA Conversacional</h3>
+          <p>Entiende contexto, responde con naturalidad y se adapta al tono de tu marca.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="url(#gradIcon)" stroke-width="1.6"/><path d="M12 7v5l3.5 3.5" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Atención 24/7</h3>
+          <p>Nunca duerme. Responde de madrugada igual que a mediodía.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 17l5-6 4 4 7-9" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Automatización de ventas</h3>
+          <p>Califica prospectos, agenda citas y cierra ventas sin intervención manual.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="7" height="16" rx="1.5" stroke="url(#gradIcon)" stroke-width="1.6"/><rect x="14" y="4" width="7" height="16" rx="1.5" stroke="url(#gradIcon)" stroke-width="1.6"/></svg>
+          </span>
+          <h3>Multicanal</h3>
+          <p>WhatsApp, Instagram, Facebook y web, todo desde un mismo cerebro de IA.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CÓMO FUNCIONA -->
+  <section class="como-funciona" id="como-funciona">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Cómo funciona</h2>
+      <div class="steps">
+        <div class="step" data-reveal>
+          <span class="step__num">01</span>
+          <h3>Conecta tus canales</h3>
+          <p>Vinculamos VELTDRY a tus redes sociales para que atienda a tus clientes 24/7.</p>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step__num">02</span>
+          <h3>Configura tu agente de IA</h3>
+          <p>Capacitamos a VELTDRY con la información de tu negocio: productos, precios, servicios y horarios.</p>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step__num">03</span>
+          <h3>Empieza a vender</h3>
+          <p>VELTDRY atiende, cobra y agenda mientras tú te enfocas en crecer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. DEMOSTRACIÓN INTERACTIVA -->
+  <section class="demo-interactiva" id="demo-interactiva">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Mira a VELTDRY en acción.</h2>
+      <p class="section-sub" data-reveal>Elige un escenario y observa cómo responde el agente de IA.</p>
+
+      <div class="demo-panel" data-reveal>
+        <div class="demo-panel__tabs" data-demo-tabs role="tablist">
+          <button class="demo-tab is-active" data-demo-tab="producto" role="tab" aria-selected="true">Consulta de producto</button>
+          <button class="demo-tab" data-demo-tab="precios" role="tab" aria-selected="false">Precios</button>
+          <button class="demo-tab" data-demo-tab="informacion" role="tab" aria-selected="false">Información</button>
+          <button class="demo-tab" data-demo-tab="compra" role="tab" aria-selected="false">Intención de compra</button>
+        </div>
+
+        <div class="chat-card chat-card--lg">
+          <div class="chat-card__head">
+            <span class="chat-dot" aria-hidden="true"></span>
+            <span class="chat-card__title">VELTDRY AI</span>
+            <span class="chat-card__status">en línea</span>
+          </div>
+          <div class="chat-card__body" data-demo-chat aria-live="polite"></div>
+        </div>
+
+        <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow demo-panel__cta">Probar VELTDRY AI</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SOLUCIONES PARA EMPRESAS -->
+  <section class="soluciones" id="soluciones">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Soluciones para cada industria</h2>
+      <div class="industrias-grid">
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 8h12l-1.4 10.1a2 2 0 0 1-2 1.9H9.4a2 2 0 0 1-2-1.9L6 8Z" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>E-commerce</h3>
+          <p>Responde dudas de producto, procesa pedidos y da seguimiento a envíos.</p>
+        </article>
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 2v7a1.5 1.5 0 0 0 1.5 1.5v10.5" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 2v6M9.5 2v6" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round"/><path d="M17 2c-1.8 0-3 2.5-3 6s1.2 4.5 3 4.5v8.5" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Restaurantes</h3>
+          <p>Toma reservas, comparte el menú y gestiona pedidos a domicilio.</p>
+        </article>
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.65-9.5 9-9.5 9Z" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12h2l1.5-2.5L13 15l1.5-3H16" stroke="url(#gradIcon)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Clínicas</h3>
+          <p>Agenda citas, resuelve dudas y envía recordatorios automáticos.</p>
+        </article>
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 9.5V20a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1V9.5" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Inmobiliarias</h3>
+          <p>Califica leads, comparte fichas de propiedades y agenda visitas.</p>
+        </article>
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M2 9 12 4l10 5-10 5-10-5Z" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 11.3V17c0 1.1 2.7 2 6 2s6-.9 6-2v-5.7" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Educación</h3>
+          <p>Informa sobre cursos, matrículas y resuelve dudas de estudiantes.</p>
+        </article>
+        <article class="industria-card" data-reveal>
+          <span class="industria-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="12" rx="2" stroke="url(#gradIcon)" stroke-width="1.6"/><path d="M8 7V5.5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2V7" stroke="url(#gradIcon)" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 12.5h18" stroke="url(#gradIcon)" stroke-width="1.6"/></svg>
+          </span>
+          <h3>Servicios profesionales</h3>
+          <p>Filtra consultas, agenda reuniones y da seguimiento a propuestas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PRECIOS -->
+  <section class="precios" id="precios">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Un plan para cada etapa de tu negocio</h2>
+      <div class="pricing-grid">
+
+        <article class="price-card" data-reveal>
+          <h3 class="price-card__name">Basic</h3>
+          <p class="price-card__price">$200<span>/mes</span></p>
+          <p class="price-card__tagline">"Tu primera línea de atención, siempre despierta."</p>
+          <ul class="price-card__list">
+            <li>Responde al instante cualquier consulta sobre tu negocio, sin dejar a nadie esperando.</li>
+            <li>Información precisa de productos, servicios, horarios y ubicación, 24/7.</li>
+            <li>Ideal para negocios que quieren dejar de perder clientes por no contestar a tiempo.</li>
+            <li>Configuración rápida, sin complicaciones.</li>
+          </ul>
+          <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20el%20plan%20Basic%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--ghost price-card__cta">Solicitar plan</a>
+        </article>
+
+        <article class="price-card price-card--featured" data-reveal>
+          <span class="price-card__badge">⭐ Más popular</span>
+          <h3 class="price-card__name">Essencial</h3>
+          <p class="price-card__price">$400<span>/mes</span></p>
+          <p class="price-card__tagline">"El plan que convierte conversaciones en ventas reales."</p>
+          <ul class="price-card__list">
+            <li>Todo lo del plan Basic, más un agente que vende y asesora activamente a tus clientes.</li>
+            <li>Cobra directamente por transacciones y SINPE Móvil, sin fricción.</li>
+            <li>Agenda citas automáticamente, sin que tú muevas un dedo.</li>
+            <li>Entiende imágenes que te envían tus clientes (fotos de productos, comprobantes, dudas visuales).</li>
+            <li>Responde también notas de voz — tus clientes te escriben o hablan, la IA entiende igual.</li>
+            <li>El equilibrio perfecto entre automatización completa y control total de tu negocio.</li>
+          </ul>
+          <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20el%20plan%20Essencial%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow price-card__cta">Solicitar plan</a>
+        </article>
+
+        <article class="price-card" data-reveal>
+          <h3 class="price-card__name">Pro</h3>
+          <p class="price-card__price">$1000<span>/mes</span></p>
+          <p class="price-card__tagline">"Tu equipo de ventas completo, sin límites."</p>
+          <ul class="price-card__list">
+            <li>Todo lo de Essencial, llevado al máximo nivel.</li>
+            <li>Contesta llamadas telefónicas con IA — tu negocio nunca pierde una llamada.</li>
+            <li>Reportes de ventas automáticos, para decisiones con datos reales, no suposiciones.</li>
+            <li>Pensado para negocios que quieren escalar sin aumentar su equipo.</li>
+            <li>La experiencia VELTDRY completa: conversación, venta, cobro, agenda y análisis en un solo lugar.</li>
+          </ul>
+          <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20el%20plan%20Pro%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--ghost price-card__cta">Solicitar plan</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CTA FINAL -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-final__mesh" aria-hidden="true"></div>
+    <div class="container">
+      <h2 class="section-title" data-reveal>Tu próximo cliente podría estar escribiéndote ahora mismo.</h2>
+      <p class="section-sub" data-reveal>No dejes que una conversación se convierta en una venta perdida.</p>
+      <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener" class="btn btn--primary btn--glow btn--lg" data-reveal>Automatiza tus ventas con VELTDRY →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#main" class="logo footer__logo" aria-label="VELTDRY — inicio">
+        <img src="assets/img/veltdry-logo.png" alt="VELTDRY" class="logo__img" width="170" height="31">
+      </a>
+      <p class="footer__category">AI Sales Automation</p>
+      <p class="footer__tagline">Turn conversations into customers.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Producto</h4>
+      <a href="#solucion">Funcionalidades</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#demo-interactiva">Demostración</a>
+    </div>
+    <div class="footer__col">
+      <h4>Soluciones</h4>
+      <a href="#soluciones">Por industria</a>
+      <a href="#precios">Precios</a>
+    </div>
+    <div class="footer__col">
+      <h4>Empresa</h4>
+      <a href="#">Recursos</a>
+      <a href="https://wa.me/50660345134?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20VELTDRY." target="_blank" rel="noopener">Contacto</a>
+    </div>
+    <div class="footer__col">
+      <h4>Síguenos</h4>
+      <a href="https://www.instagram.com/veltdry/?next=%2F" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 VELTDRY. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260723d"></script>
+</body>
+</html>
