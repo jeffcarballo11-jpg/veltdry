@@ -122,7 +122,7 @@
     }
     requestAnimationFrame(tick);
 
-    const HOVERABLES = "a, button, .btn, .feature-card, .problema__card, .price-card, .industria-card, .demo-tab, .chat-card, .metric, .step";
+    const HOVERABLES = "a, button, .btn, .feature-card, .problema__card, .price-card, .industria-card, .demo-tab, .chat-card, .step";
     document.addEventListener("mouseover", e => {
       if (e.target.closest(HOVERABLES)) root.classList.add("is-interactive");
     });
@@ -167,30 +167,6 @@
         card.style.transform = `perspective(900px) rotateX(${cx.toFixed(2)}deg) rotateY(${cy.toFixed(2)}deg) scale(${scale})`;
         raf = (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) ? requestAnimationFrame(loop) : null;
       }
-    });
-  }
-
-  /* ---------- Count-up numbers ---------- */
-  function initCountUp() {
-    $$("[data-count-to]").forEach(el => {
-      const target = parseFloat(el.dataset.countTo);
-      const prefix = el.dataset.prefix || "";
-      const suffix = el.dataset.suffix || "";
-      const trigger = () => {
-        if (window.gsap) {
-          const obj = { v: 0 };
-          gsap.to(obj, {
-            v: target, duration: 1.6, ease: "power2.out",
-            onUpdate: () => { el.textContent = prefix + Math.round(obj.v) + suffix; }
-          });
-        } else {
-          el.textContent = prefix + target + suffix;
-        }
-      };
-      const io = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { trigger(); io.unobserve(e.target); } });
-      }, { threshold: 0.4 });
-      io.observe(el);
     });
   }
 
@@ -286,7 +262,6 @@
     safe(initCursor, "initCursor");
     safe(initCardHalo, "initCardHalo");
     safe(initTilt, "initTilt");
-    safe(initCountUp, "initCountUp");
     safe(initHeroChat, "initHeroChat");
     safe(initDemoChat, "initDemoChat");
 

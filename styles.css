@@ -341,21 +341,6 @@ section { position: relative; padding-block: clamp(4rem, 9vw, 7.5rem); }
 @keyframes typingBounce { 0%, 60%, 100% { transform: translateY(0); opacity: .5; } 30% { transform: translateY(-4px); opacity: 1; } }
 
 /* =============================================================
-   9. Metrics
-   ============================================================= */
-.metrics { padding-block: 3.5rem; border-block: 1px solid var(--line); }
-.metrics__grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; text-align: center;
-}
-.metric__value {
-  display: block; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600;
-  background: linear-gradient(90deg, var(--fuchsia), var(--cyan));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-}
-.metric__label { display: block; margin-top: .4rem; color: var(--mute); font-size: .88rem; }
-@media (min-width: 720px) { .metrics__grid { grid-template-columns: repeat(4, 1fr); } }
-
-/* =============================================================
    10. Problema
    ============================================================= */
 .problema__grid { display: grid; gap: 1.4rem; margin-bottom: 2.5rem; }
@@ -554,6 +539,8 @@ section { position: relative; padding-block: clamp(4rem, 9vw, 7.5rem); }
 .footer__col a { display: block; color: var(--mute); font-size: .88rem; margin-bottom: .6rem; transition: color .3s; }
 .footer__col a:hover { color: var(--cyan); }
 .footer__bottom { padding-top: 2rem; border-top: 1px solid var(--line); color: var(--mute-2); font-size: .8rem; }
+.footer__bottom a { transition: color .3s; }
+.footer__bottom a:hover { color: var(--cyan); }
 @media (min-width: 720px) { .footer__grid { grid-template-columns: 1.4fr repeat(4, 1fr); } }
 
 /* =============================================================
