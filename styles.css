@@ -487,9 +487,7 @@ section { position: relative; padding-block: clamp(4rem, 9vw, 7.5rem); }
   background: linear-gradient(180deg, rgba(255,0,224,0.06), rgba(0,229,255,0.04) 60%, var(--glass));
   transform: scale(1.02);
 }
-.price-card__name { font-size: 1.15rem; margin-bottom: .6rem; color: var(--mute); font-weight: 500; }
-.price-card__price { font-size: 2.4rem; font-weight: 600; margin-bottom: .8rem; }
-.price-card__price span { font-size: 1rem; color: var(--mute); font-weight: 400; }
+.price-card__name { font-size: 1.3rem; margin-bottom: 1.1rem; color: var(--ink); font-weight: 600; }
 .price-card__tagline { font-style: italic; color: var(--ink); font-size: .95rem; margin-bottom: 1.3rem; min-height: 2.6em; }
 .price-card__list { display: flex; flex-direction: column; gap: .65rem; margin-bottom: 1.8rem; flex: 1; }
 .price-card__list li {
